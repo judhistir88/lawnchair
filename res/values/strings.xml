@@ -566,6 +566,7 @@
     <string name="seven_sided_cookie_shape_title">7-sided cookie</string>
     <!-- label for arch shape option in customization picker -->
     <string name="arch_shape_title">Arch</string>
+    <!-- Add home screen preference strings -->
     <string name="home_screen">Home Screen</string>
     <string name="show_all_apps_on_home">Show all apps on home screen</string>
 </resources>
