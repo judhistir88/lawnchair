@@ -89,6 +89,13 @@ fun DockPreferences(modifier: Modifier = Modifier) {
                     )
                 }
             }
+            PreferenceGroup(heading = stringResource(id = R.string.home_screen)) {
+            Item {
+                SwitchPreference(
+                    adapter = prefs2.expandHomeScreenWhenDockDisabled.getAdapter(),
+                    label = stringResource(id = R.string.show_all_apps_on_home),
+                )
+            }
         }
     }
 }
