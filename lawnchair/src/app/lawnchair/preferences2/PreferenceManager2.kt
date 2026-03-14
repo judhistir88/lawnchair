@@ -732,7 +732,14 @@ class PreferenceManager2 @Inject constructor(
     val enableLabelInDock = preference(
         key = booleanPreferencesKey(name = "enable_label_dock"),
         defaultValue = false,
+        onSet = { reloadHelper.reloadGrid() }
+        
+        
+    val expandHomeScreenWhenDockDisabled = preference(
+        key = booleanPreferencesKey(name = "pref_expand_home_when_dock_disabled"),
+        defaultValue = true,
         onSet = { reloadHelper.reloadGrid() },
+           
     )
 
     val iconSwipeGestures = preference(
